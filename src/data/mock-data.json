@@ -1,0 +1,426 @@
+{
+  "statuses": [
+    {
+      "id": 1,
+      "name": "Активный",
+      "color": "#2EAF6D"
+    },
+    {
+      "id": 2,
+      "name": "На подписании",
+      "color": "#E2A93B"
+    },
+    {
+      "id": 3,
+      "name": "Процесс расторжения",
+      "color": "#DA6C4F"
+    },
+    {
+      "id": 4,
+      "name": "Скоро освободится",
+      "color": "#7B61FF"
+    }
+  ],
+  "buildings": [
+    {
+      "id": 1,
+      "name": "БЦ Orion",
+      "address": "г. Алматы, пр. Абая, 42",
+      "floors": [
+        "1 этаж",
+        "2 этаж",
+        "3 этаж",
+        "4 этаж"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ТЦ Panorama",
+      "address": "г. Алматы, ул. Толе би, 88",
+      "floors": [
+        "1 этаж",
+        "2 этаж",
+        "3 этаж"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Склад Север",
+      "address": "г. Алматы, ул. Северная, 14",
+      "floors": [
+        "-1 этаж",
+        "1 этаж",
+        "2 этаж"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Бизнес-центр Riverside",
+      "address": "г. Алматы, ул. Набережная, 19",
+      "floors": [
+        "1 этаж",
+        "2 этаж",
+        "5 этаж"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "arendator_company_name": "ТОО \"Astra Service\"",
+      "trade_name_company": "Astra",
+      "arendator_director_name": "Ильин Артём Сергеевич",
+      "arendator_phone_number": "+7 701 555 11 22",
+      "arendator_main_phone_number": "+7 727 555 11 22",
+      "email": "office@astra.kz",
+      "arendator_bin": "240140011111",
+      "notification_phone": "+7 701 555 11 22",
+      "notification_telagram": "@astra_service",
+      "additional_info": "Ключевой клиент, нужна быстрая обработка заявок."
+    },
+    {
+      "id": 2,
+      "arendator_company_name": "ТОО \"Delta Trade\"",
+      "trade_name_company": "Delta",
+      "arendator_director_name": "Сеитова Алина Нурлановна",
+      "arendator_phone_number": "+7 702 444 33 11",
+      "arendator_main_phone_number": "+7 727 444 33 11",
+      "email": "hello@delta.trade",
+      "arendator_bin": "220240022222",
+      "notification_phone": "+7 702 444 33 11",
+      "notification_telagram": "@delta_trade",
+      "additional_info": "Просит согласовывать изменения только через директора."
+    },
+    {
+      "id": 3,
+      "arendator_company_name": "ТОО \"Nova Logistics\"",
+      "trade_name_company": "Nova Logistics",
+      "arendator_director_name": "Ким Ирина Олеговна",
+      "arendator_phone_number": "+7 705 333 22 11",
+      "arendator_main_phone_number": "+7 727 333 22 11",
+      "email": "logistics@nova.kz",
+      "arendator_bin": "230340033333",
+      "notification_phone": "+7 705 333 22 11",
+      "notification_telagram": "@nova_logistics",
+      "additional_info": "Есть несколько объектов в одном здании."
+    },
+    {
+      "id": 4,
+      "arendator_company_name": "ТОО \"City Market\"",
+      "trade_name_company": "City Market",
+      "arendator_director_name": "Жумабеков Нурлан Аскарович",
+      "arendator_phone_number": "+7 707 222 11 99",
+      "arendator_main_phone_number": "+7 727 222 11 99",
+      "email": "contact@citymarket.kz",
+      "arendator_bin": "210240044444",
+      "notification_phone": "+7 707 222 11 99",
+      "notification_telagram": "@city_market",
+      "additional_info": "Часто меняет состав площадей и просит быстро обновлять карточку."
+    },
+    {
+      "id": 5,
+      "arendator_company_name": "ТОО \"Prime Retail\"",
+      "trade_name_company": "Prime Retail",
+      "arendator_director_name": "Ахметова Гульнар Маратовна",
+      "arendator_phone_number": "+7 700 111 00 10",
+      "arendator_main_phone_number": "+7 727 111 00 10",
+      "email": "info@primeretail.kz",
+      "arendator_bin": "240540055555",
+      "notification_phone": "+7 700 111 00 10",
+      "notification_telagram": "@prime_retail",
+      "additional_info": "Пользуется несколькими зданиями и требует хорошей навигации по объектам."
+    },
+    {
+      "id": 6,
+      "arendator_company_name": "ТОО \"Green Office\"",
+      "trade_name_company": "Green Office",
+      "arendator_director_name": "Сағындықова Лаура Ерлановна",
+      "arendator_phone_number": "+7 701 888 77 66",
+      "arendator_main_phone_number": "+7 727 888 77 66",
+      "email": "team@greenoffice.kz",
+      "arendator_bin": "250140066666",
+      "notification_phone": "+7 701 888 77 66",
+      "notification_telagram": "@green_office",
+      "additional_info": "Есть спорные вопросы по этажам и доступам."
+    }
+  ],
+  "objects": [
+    {
+      "id": 1,
+      "name": "Офис 101",
+      "building_id": 1,
+      "client_id": 1,
+      "floor": 1,
+      "cabinet_number": 101,
+      "square": 42,
+      "status_id": 1,
+      "object_type": "Офис"
+    },
+    {
+      "id": 2,
+      "name": "Офис 204",
+      "building_id": 1,
+      "client_id": 1,
+      "floor": 2,
+      "cabinet_number": 204,
+      "square": 58,
+      "status_id": 1,
+      "object_type": "Офис"
+    },
+    {
+      "id": 3,
+      "name": "Бутик B-12",
+      "building_id": 2,
+      "client_id": 2,
+      "floor": 1,
+      "cabinet_number": 12,
+      "square": 31,
+      "status_id": 2,
+      "object_type": "Бутик"
+    },
+    {
+      "id": 4,
+      "name": "Бутик B-18",
+      "building_id": 2,
+      "client_id": 4,
+      "floor": 2,
+      "cabinet_number": 18,
+      "square": 27,
+      "status_id": 4,
+      "object_type": "Бутик"
+    },
+    {
+      "id": 5,
+      "name": "Склад S-01",
+      "building_id": 3,
+      "client_id": 3,
+      "floor": -1,
+      "cabinet_number": 1,
+      "square": 120,
+      "status_id": 1,
+      "object_type": "Склад"
+    },
+    {
+      "id": 6,
+      "name": "Склад S-02",
+      "building_id": 3,
+      "client_id": 3,
+      "floor": 1,
+      "cabinet_number": 2,
+      "square": 95,
+      "status_id": 3,
+      "object_type": "Склад"
+    },
+    {
+      "id": 7,
+      "name": "Офис 502",
+      "building_id": 4,
+      "client_id": 5,
+      "floor": 5,
+      "cabinet_number": 502,
+      "square": 64,
+      "status_id": 1,
+      "object_type": "Офис"
+    },
+    {
+      "id": 8,
+      "name": "Офис 202",
+      "building_id": 4,
+      "client_id": 6,
+      "floor": 2,
+      "cabinet_number": 202,
+      "square": 47,
+      "status_id": 2,
+      "object_type": "Офис"
+    }
+  ],
+  "contracts": [
+    {
+      "id": 1,
+      "client_id": 1,
+      "building_id": 1,
+      "contract_number": "CN-2026-001",
+      "created_at": "2026-01-12T09:30:00Z",
+      "status_id": 1,
+      "object_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "client_id": 2,
+      "building_id": 2,
+      "contract_number": "CN-2026-002",
+      "created_at": "2026-02-03T10:10:00Z",
+      "status_id": 2,
+      "object_ids": [
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "client_id": 3,
+      "building_id": 3,
+      "contract_number": "CN-2026-003",
+      "created_at": "2026-02-18T14:20:00Z",
+      "status_id": 3,
+      "object_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": 4,
+      "client_id": 4,
+      "building_id": 2,
+      "contract_number": "CN-2026-004",
+      "created_at": "2026-03-01T08:45:00Z",
+      "status_id": 4,
+      "object_ids": [
+        4
+      ]
+    },
+    {
+      "id": 5,
+      "client_id": 5,
+      "building_id": 4,
+      "contract_number": "CN-2026-005",
+      "created_at": "2026-03-21T16:05:00Z",
+      "status_id": 1,
+      "object_ids": [
+        7
+      ]
+    },
+    {
+      "id": 6,
+      "client_id": 6,
+      "building_id": 4,
+      "contract_number": "CN-2026-006",
+      "created_at": "2026-04-04T11:15:00Z",
+      "status_id": 2,
+      "object_ids": [
+        8
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "client_id": 1,
+      "created_at": "2026-04-01T10:10:00Z",
+      "comment_text": "Запросили обновить договор и прислать акт сверки.",
+      "target_date": "2026-04-05",
+      "file_name": "act.pdf",
+      "file_path": "debtors_registry/comments/act.pdf"
+    },
+    {
+      "id": 2,
+      "client_id": 2,
+      "created_at": "2026-04-03T12:40:00Z",
+      "comment_text": "Нужна подпись на допсоглашении по аренде.",
+      "target_date": "2026-04-07",
+      "file_name": null,
+      "file_path": null
+    },
+    {
+      "id": 3,
+      "client_id": 3,
+      "created_at": "2026-04-06T09:00:00Z",
+      "comment_text": "Согласовать новый этаж и доступ в складскую зону.",
+      "target_date": "2026-04-10",
+      "file_name": "floor-plan.xlsx",
+      "file_path": "debtors_registry/comments/floor-plan.xlsx"
+    },
+    {
+      "id": 4,
+      "client_id": 5,
+      "created_at": "2026-04-11T15:30:00Z",
+      "comment_text": "Попросили перенести объект на 5 этаж в карточке.",
+      "target_date": "2026-04-14",
+      "file_name": null,
+      "file_path": null
+    },
+    {
+      "id": 5,
+      "client_id": 6,
+      "created_at": "2026-04-15T08:20:00Z",
+      "comment_text": "Надо проверить список помещений в здании и синхронизацию этажей.",
+      "target_date": "2026-04-18",
+      "file_name": "screenshot.png",
+      "file_path": "debtors_registry/comments/screenshot.png"
+    }
+  ],
+  "analytics": {
+    "kpis": [
+      {
+        "key": "occupied_area",
+        "label": "Занятая площадь",
+        "value": "1 486 м²",
+        "delta": "+8.2%"
+      },
+      {
+        "key": "active_clients",
+        "label": "Активные клиенты",
+        "value": "42",
+        "delta": "+3"
+      },
+      {
+        "key": "contracts_expiring",
+        "label": "Истекают в 30 дней",
+        "value": "7",
+        "delta": "-2"
+      },
+      {
+        "key": "comments_open",
+        "label": "Открытые комментарии",
+        "value": "18",
+        "delta": "+5"
+      }
+    ],
+    "revenue_by_month": [
+      {
+        "month": "Янв",
+        "revenue": 12800000
+      },
+      {
+        "month": "Фев",
+        "revenue": 13450000
+      },
+      {
+        "month": "Мар",
+        "revenue": 14210000
+      },
+      {
+        "month": "Апр",
+        "revenue": 14990000
+      },
+      {
+        "month": "Май",
+        "revenue": 15130000
+      },
+      {
+        "month": "Июн",
+        "revenue": 15840000
+      }
+    ],
+    "contract_statuses": [
+      {
+        "status_id": 1,
+        "count": 24
+      },
+      {
+        "status_id": 2,
+        "count": 9
+      },
+      {
+        "status_id": 3,
+        "count": 5
+      },
+      {
+        "status_id": 4,
+        "count": 4
+      }
+    ]
+  }
+}
